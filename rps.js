@@ -46,3 +46,12 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
+function playGame() {
+    for (let i = 0; i < 10; i++) {
+        let playerHand = prompt("Make your choice.", "").toLowerCase();
+        let computerHand = computerPlay();
+        console.log(playRound(playerHand, computerHand));
+    }
+}
+
+playGame();
